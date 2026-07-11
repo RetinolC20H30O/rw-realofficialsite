@@ -19,3 +19,63 @@ body {
     font-size: 3rem;
     text-align: center;
 }
+
+.glass-box{
+    width:700px;
+    max-width:90%;
+    max-height:500px;
+    overflow-y:auto;
+    margin:auto;
+    padding:30px;
+    border-radius:22px;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.30),
+            rgba(210,170,110,0.20)
+        );}
+
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    padding: 9px 18px;
+    border-radius: 12px;
+    background: linear-gradient(#d8b06d, #9b6a3d);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.fade-title {
+    font-size: 140px;
+    margin-left: 50px;
+    animation: fadeIn 0.9s ease-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;   /* Centers everything horizontally */
+    align-items: center;       /* Centers everything vertically */
+    gap: 15px;                 /* Sets clean spacing between items */
+}
+.buttonwithinfo {
+    padding: 12px 24px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    background: #d8b06d;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.buttonwithinfo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
