@@ -28,14 +28,6 @@
             z-index: -1; /* Keeps the background behind the text */
             transform: scale(1.1); /* Prevents white edges caused by blur */
         }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -46,13 +38,25 @@
         To the Great Moments
     </h1>
     <div class="container">
-        <button class="buttonwithinfo">
+        <button class="buttonwithinfo" mar>
             <h1 style="font-family: 'Times New Roman', Times, serif; margin: 0;">Enter the Time Capsule</h1>
             <h2 style="margin: 5px 0 0 0;">Look at the starting point, the past, the present.</h2>
         </button>
     </div>
-
-    <button onclick="window.location.href='credit.html'" style="position: fixed; bottom: 20px; right: 20px;">
+<div style="height: 300px;"></div>
+    <div class="anybox container" style="color: black; padding: 20px;">
+    <h3 style="font-family: 'Courier New', Courier, monospace; color:#30031F ;">
+        The following are our usage policy and any user is expected to read and acknowledge our policy.<br>
+        This is a non-profit site and every photo on this site is owned by the developing team and not for public uses<br>
+        Leaking, saving or publishing any information from this site heavily violates our usage policy.<br>
+        Any user outside of Rai Wa may not republish, share, or distribute these photos on any website, social media platform, or external media.<br>
+        All images are for viewing purposes only, and any commercial exploitation or unauthorized use is strictly forbidden.<br>
+        ©2026 Hayasaka Minase and all of RW
+    </h3>
+</div>
+<div style="height: 300px;"></div>
+    </div>
+    <button onclick="window.location.href='credit.html'" style="position: fixed; bottom: 30px; right: 20px;">
         Credits
     </button>
 </body>
