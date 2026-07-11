@@ -4,7 +4,6 @@ body {
     background-color: #f5e8bc;
     overflow-x: hidden; /* stops the huge title from causing sideways scroll/layout shift */
 }
-
 .title-box {
     width: fit-content;
     max-width: 90%;
@@ -14,14 +13,22 @@ body {
     background: linear-gradient(135deg, #d4af37, #8b5a2b);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
-
 .title-box h1 {
     margin: 0;
     color: white;
     font-size: 3rem;
     text-align: center;
 }
-
+.anybox{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* The magic properties that blur whatever is behind the box */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px); /* Safari support */
+  }
 .glass-box{
     width:700px;
     max-width:90%;
@@ -37,7 +44,6 @@ body {
             rgba(210,170,110,0.20)
         );
 }
-
 .back-button {
     position: fixed;
     top: 30px;
@@ -50,7 +56,6 @@ body {
     cursor: pointer;
     z-index: 10; /* stays above the glass box instead of fighting with it */
 }
-
 .fade-title {
     font-size: clamp(2.2rem, 10vw, 140px); /* scales down smoothly on phones instead of forcing 140px */
     margin: 0 auto;
@@ -58,7 +63,6 @@ body {
     text-align: center;
     animation: fadeIn 0.9s ease-out;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -72,13 +76,11 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;           /* lets content wrap instead of overflowing on narrow screens */
-    justify-content: center;   /* Centers everything horizontally */
-    align-items: center;       /* Centers everything vertically */
-    gap: 15px;                 /* Sets clean spacing between items */
-    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
 }
-
 .buttonwithinfo {
     padding: 12px 24px;
     border: 1px solid #777;
@@ -88,12 +90,10 @@ body {
     max-width: 100%;
     transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .buttonwithinfo h1,
 .buttonwithinfo h2 {
     font-size: clamp(1rem, 4vw, 1.8rem); /* keeps button text readable, not overflowing on phones */
 }
-
 .buttonwithinfo:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.25);
