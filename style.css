@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5e8bc;
+}
+
+.title-box {
+    width: fit-content;
+    margin: 20px auto; /* 20px from the top, centered horizontally */
+    padding: 20px 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #d4af37, #8b5a2b);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.title-box h1 {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
