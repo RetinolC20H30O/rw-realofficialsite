@@ -5,10 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RW Official Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* The blurred background layer */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('image/rwmain.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px); /* Adjust the pixels to change blur strength */
+            z-index: -1; /* Keeps the background behind the text */
+            transform: scale(1.1); /* Prevents white edges caused by blur */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="title-box">
-        <h1>Rai Wa Official Website</h1>
+        <h1 style="text-align: center;">Rai Wa Official Website</h1>
     </div>
+<h1 class="fade-title" style="color:#612014; font-family: 'Times New Roman', Times, serif; text-align: center; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);">
+    To the Great Moments
+</h1>
+    <div class="container">
+        <button class="buttonwithinfo">
+            <h1 style="font-family: 'Times New Roman', Times, serif; margin: 0;">Enter the Time Capsule</h1>
+            <h2 style="margin: 5px 0 0 0;">Look at the starting point, the past, the present.</h2>
+        </button>
+    </div>
+
+    <button onclick="window.location.href='credit.html'" style="position: fixed; bottom: 20px; right: 20px;">
+        Credits
+    </button>
 </body>
 </html>
