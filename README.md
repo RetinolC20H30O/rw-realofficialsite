@@ -4,5 +4,5 @@ Roadmap <br>
 1.4++ add photos <br>
 2.0 multi language support via .js <br>
 2.1++ add photos <br>
-X.X.1 fix bugs for Android and Linux <br>
-X.X.2 fix bugs for Windows <br>
+X.X.X.1 fix bugs for Android and Linux <br>
+X.X.X.2 fix bugs for Windows <br>
