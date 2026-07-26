@@ -142,3 +142,12 @@ html, body {
   height: auto;
   max-height: 300px;
 }
+figure {
+  margin: 0;
+  text-align: center;
+}
+figcaption {
+  margin-top: 6px;
+  font: 14px/1.4 sans-serif;
+  color:darkmagenta;
+}
